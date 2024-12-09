@@ -1,0 +1,221 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:"montserral",sans-serif ;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: white;
+}
+
+.nav_bar{
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    margin-left: 100px;
+    align-items: center;
+}
+#logo{
+    width:200px
+}
+.linkitem{
+    display:inline-block;
+    margin: 20px;
+}
+.links{
+    text-decoration:  none;
+    font-weight: bolder;
+    color:black;
+}
+.links:hover{
+    color: rgb(229, 20, 20);
+}
+#lastname{
+color: yellow;
+}
+.title{
+    margin-top: 20%;
+    margin-left: 20%;
+}
+.tile_h1{
+    margin: 20px;
+}
+.download{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.image{
+    height: 85%;
+    width: 45%;
+    position: absolute; 
+    right: 30px;
+    bottom: 0%;
+}
+.imagegroup{
+    height: 100%;
+    position: absolute; 
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%);
+    transition: bottom 1s, left 2s;
+}
+.image:hover #girl{
+    left:40%;
+}
+.image:hover #shape{
+    bottom:40px;
+}
+#about{
+    margin: 20% 8% 0% 8%;
+    
+}
+.heading{
+    text-align: center;
+}.heading h1{
+    font-size: 50px;
+}
+.heading span{
+    color: blue;
+    font-size: 20px;
+}
+.about_content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    margin-top: 3rem;
+}
+.about_img img{
+    width: 80%;
+    border-radius: 10px;
+}
+.about_para{
+    text-align: justify;
+    font-size: 20px;
+}
+.info{
+    margin-top: 25px;
+}
+.info_box{
+    margin-bottom: 20px;
+}
+#skills{
+    margin: 5% 8% 0% 8%;
+}
+.skills_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top:  3rem;
+    column-gap: 2rem;
+}
+.progress_container{
+    margin-top: 10px;
+}
+.progress_bar{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 1rem 0px;
+    justify-content: space-between;
+    position: relative;
+}
+.bar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0px;
+}
+.html_bar{
+    width: 95%;
+    background-color: orange;
+
+}
+.html_bar1{
+    width: 90%;
+    background-color: orange;
+
+}
+.html_bar2{
+    width: 85%;
+    background-color: orange;
+}
+.html_bar3{
+    width: 80%;
+    background-color: orange;
+
+}
+.skils_img{
+    width:90%;
+    padding-left: 4rem;
+}
+#contact{
+    margin: 4% 8% 0% 8%;
+}
+.icon_set{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.icon , .up_arrow{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 15px;
+}
+.icon i{
+    font-size: 2rem;
+    color: black;
+}
+footer p{
+text-align: center;
+font-weight: bolder;
+margin-top: 50px;
+
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right , yellow ,red);
+    /* color-orange */
+}
+.icon:hover i{
+    color: white;
+    animation: shake 1s;
+}
+/* animation move */
+@keyframes shake{
+    10% {
+        transform: rotate(15deg);
+    }
+    20%
+    {
+        transform: rotate(-15deg);
+    }
+    30%
+    {
+        transform: rotate(-15deg);
+    }
+    40%
+    {
+        transform: rotate(-15deg);
+    }
+}
+.up_arrow{
+    background-image: linear-gradient(to bottom right,yellow,red);
+    float: right;
+    margin: 20px 10px 5px 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
